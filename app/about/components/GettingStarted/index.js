@@ -21,7 +21,7 @@ export const GettingStarted = () => {
 				<FaQuoteLeft className='text-[#0048f9] text-5xl mb-4' />
 
 				{/* Testimonial Text */}
-				<h3 className='text-[26px] text-black tracking-tighter leading-[1.2em] font-medium text-left'>
+				<h3 className='text-[26px] tracking-tighter leading-[1.2em] font-medium text-left'>
 					When we founded Osuva, we had a simple vision - to help businesses
 					succeed in the digital world by combining technical excellence with
 					genuine care for our clients' success. That vision still drives
