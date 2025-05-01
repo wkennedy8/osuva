@@ -37,7 +37,7 @@ export const MenuDrawer = ({ open, onClose }) => {
 		},
 		{
 			title: 'Contact',
-			href: '/'
+			href: '/contact'
 		}
 		// {
 		// 	title: 'locations',

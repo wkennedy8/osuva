@@ -28,7 +28,7 @@ export const OurApproach = () => {
 				{approaches.map((approach) => {
 					return (
 						<div key={approach.id} className='space-y-4'>
-							<h3 className='text-4xl font-medium tracking-[-0.07em] leading-[1.1em]'>
+							<h3 className='text-4xl text-[#0048f9] font-medium tracking-[-0.07em] leading-[1.1em]'>
 								{approach.id}
 							</h3>
 							<h3 className='text-[26px] font-medium tracking-[-0.04em] leading-[1.2em]'>

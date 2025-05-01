@@ -38,7 +38,7 @@ export const AboutPage = () => {
 					<AboutCTA />
 				</div>
 				<div className='mt-24 mb-12'>
-					<h2 className='text-[44px] font-medium leading-[1em] tracking-[-.07em]'>
+					<h2 className='text-[44px] text-center font-medium leading-[1em] tracking-[-.07em]'>
 						As we grow, our mission stays the same: helping businesses succeed
 						through thoughtful digital solutions that create meaningful
 						connections with their audiences.

@@ -54,7 +54,7 @@ export const Footer = () => {
 					</ul>
 					<ul className='flex flex-col gap-2 w-1/2'>
 						<li className='text-white text-sm'>Instagram</li>
-						<li className='text-white text-sm'>Githhub</li>
+						<li className='text-white text-sm'>Github</li>
 					</ul>
 				</div>
 			</div>
