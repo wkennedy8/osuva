@@ -1,5 +1,6 @@
 import { onest, league_spartan } from '@/app/fonts';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Header = () => {
 	return (
@@ -7,11 +8,12 @@ export const Header = () => {
 			className={`${onest.className} flex justify-between items-center p-4`}
 		>
 			<div className='py-4'>
-				<h1
+				<Link
+					href='/'
 					className={`${league_spartan.className} leading-0 text-5xl font-bold tracking-[-0.08em]`}
 				>
 					osuva
-				</h1>
+				</Link>
 			</div>
 			<div>
 				<svg
