@@ -1,8 +1,11 @@
+'use client';
+import { useState } from 'react';
 import { onest, league_spartan } from '@/app/fonts';
-import Image from 'next/image';
 import Link from 'next/link';
+import { MenuDrawer } from '../MenuDrawer';
 
 export const Header = () => {
+	const [mobileNavOpen, setMobileNavOpen] = useState(false);
 	return (
 		<header
 			className={`${onest.className} flex justify-between items-center p-4`}
@@ -16,7 +19,7 @@ export const Header = () => {
 					</h1>
 				</Link>
 			</div>
-			<div>
+			<div onClick={() => setMobileNavOpen(!mobileNavOpen)}>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 24 24'
@@ -30,6 +33,10 @@ export const Header = () => {
 					/>
 				</svg>
 			</div>
+			<MenuDrawer
+				open={mobileNavOpen}
+				onClose={() => setMobileNavOpen(false)}
+			/>
 		</header>
 	);
 };
