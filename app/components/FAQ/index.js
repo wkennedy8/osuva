@@ -4,7 +4,7 @@ import { Accordion } from '../Accordion';
 export const FAQ = () => {
 	return (
 		<div className='mt-24'>
-			<h1 className='text-[44px] font-medium leading-14 tracking-tighter'>
+			<h1 className='text-[44px] text-black font-medium leading-14 tracking-tighter'>
 				Common Qs
 			</h1>
 
@@ -17,7 +17,7 @@ export const FAQ = () => {
 			<div className='mt-12'>
 				<Link
 					href='#'
-					className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
+					className='text-lg text-black font-medium underline underline-offset-8 flex items-center gap-2'
 				>
 					Contact us
 					<svg

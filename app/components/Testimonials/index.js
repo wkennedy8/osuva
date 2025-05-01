@@ -42,7 +42,7 @@ export const Testimonials = () => {
 
 	return (
 		<div className='pt-36 text-center'>
-			<h1 className='text-[44px] font-medium leading-[1.1em] tracking-[-.07em]'>
+			<h1 className='text-[44px] text-black font-medium leading-[1.1em] tracking-[-.07em]'>
 				Real results, real feedback
 			</h1>
 			<div className='mt-12'>
@@ -67,7 +67,7 @@ export const Testimonials = () => {
 							<FaQuoteLeft className='text-[#0048f9] text-5xl mb-4 justify-self-end' />
 
 							{/* Testimonial Text */}
-							<h3 className='text-[26px] tracking-tighter leading-[1.2em] font-medium text-left'>
+							<h3 className='text-[26px] text-black tracking-tighter leading-[1.2em] font-medium text-left'>
 								{testimonials[index].text}
 							</h3>
 

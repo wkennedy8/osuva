@@ -23,7 +23,7 @@ export const Footer = () => {
 					Get Started Today
 				</Link>
 			</div>
-			<div className={'h-[2px] max-w-[1800px] bg-[#97979733] '} />
+			<div className={'h-[2px] max-w-[1800px] bg-[#97979733] my-8 '} />
 			<div className='mt-12'>
 				<p className='px-8 text-md text-center font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
 					You can also email us at:
