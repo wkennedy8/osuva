@@ -36,7 +36,7 @@ export const GettingStarted = () => {
 						className='w-10 h-10 rounded-full object-cover'
 					/>
 					<div className='text-left'>
-						<p className='font-medium text-black'>Will Kennedy</p>
+						<p className='font-medium'>Will Kennedy</p>
 						<p className='text-sm text-gray-500'>CEO & Founder</p>
 					</div>
 				</div>
