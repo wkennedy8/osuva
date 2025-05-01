@@ -45,7 +45,7 @@ export const Footer = () => {
 						and a deep understanding of what your users really need.
 					</p>
 				</div>
-				<div className='mt-12 flex items-center justify-between'>
+				<div className='mt-12 flex justify-between'>
 					<ul className='flex flex-col gap-2 w-1/2'>
 						<li className='text-white text-sm'>Home</li>
 						<li className='text-white text-sm'>Projects</li>
@@ -55,8 +55,6 @@ export const Footer = () => {
 					<ul className='flex flex-col gap-2 w-1/2'>
 						<li className='text-white text-sm'>Instagram</li>
 						<li className='text-white text-sm'>Githhub</li>
-						<li className='text-white text-sm'>About Us</li>
-						<li className='text-white text-sm'>Contact</li>
 					</ul>
 				</div>
 			</div>
