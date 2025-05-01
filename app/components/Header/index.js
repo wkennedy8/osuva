@@ -8,11 +8,12 @@ export const Header = () => {
 			className={`${onest.className} flex justify-between items-center p-4`}
 		>
 			<div className='py-4'>
-				<Link
-					href='/'
-					className={`${league_spartan.className} leading-0 text-5xl font-bold tracking-[-0.08em]`}
-				>
-					osuva
+				<Link href='/'>
+					<h1
+						className={`${league_spartan.className} leading-0 text-5xl font-bold tracking-[-0.08em]`}
+					>
+						osuva
+					</h1>
 				</Link>
 			</div>
 			<div>
