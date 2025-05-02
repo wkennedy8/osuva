@@ -1,8 +1,11 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiArrowUpRight } from 'react-icons/fi';
 
 export const RecentProjects = () => {
+	const pathname = usePathname();
 	const projects = [
 		{
 			id: 1,
@@ -31,9 +34,11 @@ export const RecentProjects = () => {
 	];
 	return (
 		<div className='mt-24'>
-			<h1 className='text-[44px] font-medium leading-[1.1em] tracking-[-.07em]'>
-				Our recent projects
-			</h1>
+			<div className='pr-8'>
+				<h1 className='text-[44px] font-medium leading-[1.1em] tracking-[-.07em]'>
+					Our recent projects
+				</h1>
+			</div>
 			<div className='mt-12 w-11/12'>
 				<p className='text-lg font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
 					Dive into our diverse collection of innovative projects, where
@@ -41,15 +46,17 @@ export const RecentProjects = () => {
 					challenges.
 				</p>
 			</div>
-			<div className='mt-12'>
-				<Link
-					href='#'
-					className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
-				>
-					All projects
-					<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />
-				</Link>
-			</div>
+			{pathname !== '/projects' && (
+				<div className='mt-12'>
+					<Link
+						href='/projects'
+						className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
+					>
+						All projects
+						<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />
+					</Link>
+				</div>
+			)}
 			<div className='mt-12 flex flex-col px-2'>
 				{projects.map((project, i) => {
 					return (

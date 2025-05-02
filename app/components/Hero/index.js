@@ -1,5 +1,4 @@
 import { RotateWords } from '@/app/framer';
-import Link from 'next/link';
 import { FiArrowUpRight } from 'react-icons/fi';
 
 export const Hero = () => {
@@ -20,13 +19,13 @@ export const Hero = () => {
 				</p>
 			</div>
 			<div className='mt-12'>
-				<Link
-					href='#'
+				<a
+					href='#services'
 					className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
 				>
 					Browse our services
 					<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

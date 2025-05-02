@@ -32,7 +32,7 @@ export const OurServices = () => {
 		}
 	];
 	return (
-		<div>
+		<div id='#services'>
 			<h3 className='mt-24 text-[36px] font-medium leading-[1.1em] tracking-[-.07em]'>
 				This is how we help ambitious companies succeed.
 			</h3>

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 export const FAQ = () => {
 	const pathname = usePathname();
-	console.log(pathname);
+
 	return (
 		<div className='mt-24'>
 			<h1

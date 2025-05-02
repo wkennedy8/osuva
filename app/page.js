@@ -16,7 +16,13 @@ export default function Home() {
 				<Hero />
 			</div>
 			<div className='mt-24'>
-				<Image src='/images/hero1.jpg' height={800} width={800} alt='hero' />
+				<Image
+					src='/images/hero1.jpg'
+					priority
+					height={800}
+					width={800}
+					alt='hero'
+				/>
 			</div>
 			<div className='px-4'>
 				<OurVision />
@@ -36,6 +42,7 @@ export default function Home() {
 					height={800}
 					width={800}
 					alt='hero'
+					priority
 				/>
 			</div>
 			<div className='px-4 bg-gray-50'>

@@ -15,7 +15,7 @@ export const StartNowCTA = () => {
 			</div>
 			<div className='mt-12'>
 				<Link
-					href='#'
+					href='/contact'
 					className='text-xl underline underline-offset-10 flex items-center gap-2'
 				>
 					Start now

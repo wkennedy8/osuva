@@ -15,7 +15,7 @@ export const AboutCTA = () => {
 			</div>
 			<div className='mt-12'>
 				<Link
-					href='#'
+					href='/contact'
 					className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
 				>
 					Let's talk

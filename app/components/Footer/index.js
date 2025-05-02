@@ -17,7 +17,7 @@ export const Footer = () => {
 			</div>
 			<div className='flex justify-center mt-12 mb-2'>
 				<Link
-					href='#'
+					href='/contact'
 					className='py-4 border border-gray-50 px-12 font-medium bg-white text-black rounded-[12px]'
 				>
 					Get Started Today
