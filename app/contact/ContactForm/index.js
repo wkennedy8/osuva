@@ -32,7 +32,7 @@ export const ContactForm = () => {
 					required
 					value={form.name}
 					onChange={handleChange}
-					className='border-b border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
+					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
 				/>
 			</div>
 
@@ -44,7 +44,7 @@ export const ContactForm = () => {
 					placeholder='E-mail *'
 					value={form.email}
 					onChange={handleChange}
-					className='border-b border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
+					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
 				/>
 			</div>
 
@@ -56,14 +56,14 @@ export const ContactForm = () => {
 					rows={4}
 					value={form.message}
 					onChange={handleChange}
-					className='border-b border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent resize-none'
+					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent resize-none'
 				/>
 			</div>
 
 			<div className='mb-12'>
 				<button
 					type='submit'
-					className='font-medium underline underline-offset-8 flex items-center gap-2'
+					className='font-medium dark:text-white underline underline-offset-8 flex items-center gap-2'
 				>
 					Send message
 					<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />
