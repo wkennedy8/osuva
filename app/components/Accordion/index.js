@@ -61,7 +61,15 @@ export const Accordion = () => {
 								{item.question}
 							</span>
 							<span className='ml-4 mt-1 text-xl text-black'>
-								{isOpen ? <FiMinus /> : <FiPlus />}
+								{isOpen ? (
+									<FiMinus
+										className={pathname === '/contact' && 'dark:text-white'}
+									/>
+								) : (
+									<FiPlus
+										className={pathname === '/contact' && 'dark:text-white'}
+									/>
+								)}
 							</span>
 						</button>
 						<AnimatePresence initial={false}>
