@@ -7,10 +7,10 @@ import { WhyUs } from './WhyUs';
 const ContactPage = () => {
 	return (
 		<div className={`${onest.className} pt-24 px-8`}>
-			<SiMinutemailer className='text-3xl text-[#0048f9] mx-auto mb-8' />
-			<h1 className='text-[56px] font-medium leading-[1em] tracking-[-.07em]'>
+			<h1 className='text-[56px] text-center font-medium leading-[1em] tracking-[-.07em]'>
 				Get in Touch
 			</h1>
+			<SiMinutemailer className='text-3xl text-[#0048f9] mx-auto my-8' />
 			<div className='my-12 flex flex-col justify-start'>
 				<h3 className='text-[32px] text-center font-medium leading-[1em] tracking-[-.07em]'>
 					Got a project in mind? We'd love to hear about it. Big or small, we're

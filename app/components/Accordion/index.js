@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { use, useState } from 'react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import { usePathname } from 'next/navigation';
 
 const items = [
 	{
@@ -33,6 +34,7 @@ const items = [
 
 export const Accordion = () => {
 	const [openIndex, setOpenIndex] = useState(null);
+	const pathname = usePathname();
 
 	const toggle = (index) => {
 		setOpenIndex(openIndex === index ? null : index);
@@ -51,7 +53,11 @@ export const Accordion = () => {
 							className='flex justify-between items-start w-full text-left'
 							onClick={() => toggle(index)}
 						>
-							<span className='text-[16px] w-3/4 font-medium text-black leading-tight'>
+							<span
+								className={`${
+									pathname === '/contact' && 'dark:text-white'
+								} text-[16px] w-3/4 font-medium text-black leading-tight`}
+							>
 								{item.question}
 							</span>
 							<span className='ml-4 mt-1 text-xl text-black'>
