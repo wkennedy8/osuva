@@ -8,7 +8,7 @@ export const Header = () => {
 	const [mobileNavOpen, setMobileNavOpen] = useState(false);
 	return (
 		<header
-			className={`${onest.className} flex justify-between items-center p-4`}
+			className={`${onest.className} flex justify-between items-center p-4 lg:py-8 lg:px-12`}
 		>
 			<div className='py-4'>
 				<Link href='/'>

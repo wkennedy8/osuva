@@ -33,26 +33,29 @@ export const OurServices = () => {
 	];
 	return (
 		<div id='#services'>
-			<h3 className='mt-24 text-[36px] font-medium leading-[1.1em] tracking-[-.07em]'>
+			<h3 className='mt-24 lg:w-2/5 text-[36px] lg:text-[42px] font-medium leading-[1.1em] tracking-[-.07em]'>
 				This is how we help ambitious companies succeed.
 			</h3>
 			<div className='mt-24'>
 				{services.map((service) => {
 					return (
 						<div key={service.id} className='mt-8'>
-							<div className='flex items-center gap-12'>
-								<p className='text-2xl font-medium text-[#0048f9]'>
-									{service.id}
-								</p>
-								<h3 className='text-[40px] font-medium leading-[1.1em] tracking-[-.07em]'>
-									{service.type}
-								</h3>
+							<div className='lg:flex lg:gap-12'>
+								<div className='flex items-center gap-12 lg:w-1/2'>
+									<p className='text-2xl lg:text-4xl font-medium text-[#0048f9]'>
+										{service.id}
+									</p>
+									<h3 className='text-[40px] lg:text-[60px] font-medium leading-[1.1em] tracking-[-.07em]'>
+										{service.type}
+									</h3>
+								</div>
+								<div className='mt-4'>
+									<p className='pr-4 text-lg font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
+										{service.description}
+									</p>
+								</div>
 							</div>
-							<div className='mt-4'>
-								<p className='pr-4 text-lg font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
-									{service.description}
-								</p>
-							</div>
+
 							<div
 								className={`${
 									service.id != '05' &&

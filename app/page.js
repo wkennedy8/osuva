@@ -12,32 +12,33 @@ import { FAQ } from './components/FAQ';
 export default function Home() {
 	return (
 		<div className={`${onest.className}`}>
-			<div className='px-4'>
+			<div className='px-4 lg:px-12'>
 				<Hero />
 			</div>
-			<div className='mt-24'>
+			<div className='mt-24 w-full'>
 				<Image
 					src='/images/hero1.jpg'
 					priority
 					height={800}
 					width={800}
 					alt='hero'
+					className='object-cover h-full w-full'
 				/>
 			</div>
-			<div className='px-4'>
+			<div className='px-4 lg:px-12'>
 				<OurVision />
 			</div>
 			<div className='mb-24'>
 				<ClientLogos />
 			</div>
-			<div className='px-4'>
+			<div className='px-4 lg:px-12'>
 				<OurServices />
 				<RecentProjects />
 				<StartNowCTA />
 			</div>
 			<div className='mt-24'>
 				<Image
-					className='object-cover'
+					className='object-cover h-full w-full'
 					src='/images/hero1.jpg'
 					height={800}
 					width={800}
@@ -45,7 +46,7 @@ export default function Home() {
 					priority
 				/>
 			</div>
-			<div className='px-4 bg-gray-50'>
+			<div className='px-4 lg:px-12 bg-gray-50'>
 				<Testimonials />
 				<FAQ />
 			</div>

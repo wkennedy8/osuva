@@ -33,14 +33,14 @@ export const RecentProjects = () => {
 		}
 	];
 	return (
-		<div className='mt-24'>
+		<div className='mt-24 lg:mt-30'>
 			<div className='pr-8'>
-				<h1 className='text-[44px] font-medium leading-[1.1em] tracking-[-.07em]'>
+				<h1 className='text-[44px] lg:text-[60px] font-medium leading-[1.1em] tracking-[-.07em]'>
 					Our recent projects
 				</h1>
 			</div>
 			<div className='mt-12 w-11/12'>
-				<p className='text-lg font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
+				<p className='text-lg lg:text-2xl font-medium lg:w-2/4 text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
 					Dive into our diverse collection of innovative projects, where
 					creativity meets cutting-edge technology to solve real-world
 					challenges.
@@ -50,7 +50,7 @@ export const RecentProjects = () => {
 				<div className='mt-12'>
 					<Link
 						href='/projects'
-						className='text-lg font-medium underline underline-offset-8 flex items-center gap-2'
+						className='text-lg lg:text-2xl font-medium underline underline-offset-8 flex items-center gap-2'
 					>
 						All projects
 						<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />
