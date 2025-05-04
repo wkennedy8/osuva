@@ -8,6 +8,7 @@ import { RecentProjects } from './components/RecentProjects';
 import { StartNowCTA } from './components/StartNowCTA';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
+import { AnimatedHeroImage } from './components/AnimatedHeroImage';
 
 export default function Home() {
 	return (
@@ -16,14 +17,7 @@ export default function Home() {
 				<Hero />
 			</div>
 			<div className='mt-24 w-full'>
-				<Image
-					src='/images/hero1.jpg'
-					priority
-					height={800}
-					width={800}
-					alt='hero'
-					className='object-cover h-full w-full'
-				/>
+				<AnimatedHeroImage />
 			</div>
 			<div className='px-4 lg:px-12'>
 				<OurVision />
@@ -37,14 +31,7 @@ export default function Home() {
 				<StartNowCTA />
 			</div>
 			<div className='mt-24'>
-				<Image
-					className='object-cover h-full w-full'
-					src='/images/hero1.jpg'
-					height={800}
-					width={800}
-					alt='hero'
-					priority
-				/>
+				<AnimatedHeroImage />
 			</div>
 			<div className='px-4 lg:px-12 bg-gray-50'>
 				<Testimonials />

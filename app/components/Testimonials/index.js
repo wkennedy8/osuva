@@ -53,7 +53,7 @@ export const Testimonials = () => {
 			</div>
 
 			{/* CAROUSEL */}
-			<div className='mt-24 px-4'>
+			<div className='mt-24 px-4 lg:grid lg:place-content-center'>
 				<div className='relative w-full h-[465px] max-w-md bg-white rounded-2xl p-6'>
 					<AnimatePresence mode='wait'>
 						<motion.div

@@ -3,7 +3,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 export const Hero = () => {
 	return (
-		<div className='mt-24'>
+		<div className='mt-24 lg:min-h-[40vh]'>
 			<div className='flex flex-col lg:flex-row lg:gap-4'>
 				<div className='lg:w-3/4'>
 					<h1 className='text-[55px] lg:text-[80px] font-medium leading-14 tracking-tighter'>

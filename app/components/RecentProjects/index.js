@@ -33,7 +33,7 @@ export const RecentProjects = () => {
 		}
 	];
 	return (
-		<div className='mt-24 lg:mt-30'>
+		<div className='mt-24 lg:mt-36'>
 			<div className='pr-8'>
 				<h1 className='text-[44px] lg:text-[60px] font-medium leading-[1.1em] tracking-[-.07em]'>
 					Our recent projects
@@ -57,17 +57,23 @@ export const RecentProjects = () => {
 					</Link>
 				</div>
 			)}
-			<div className='mt-12 flex flex-col px-2'>
+			<div className='mt-12 flex flex-col px-2 lg:grid lg:grid-cols-6 lg:gap-6 lg:auto-rows-[minmax(100px,_auto)]'>
 				{projects.map((project, i) => {
+					// Dynamic spans for bento layout
+					const colSpan = i % 5 === 0 ? 'lg:col-span-3' : 'lg:col-span-2';
+					const rowSpan = i % 3 === 0 ? 'lg:row-span-2' : 'lg:row-span-2';
+
 					return (
-						<div key={i} className='mb-12'>
-							<Image
-								className='object-contain mx-auto w-full rounded-xl'
-								src={project.image}
-								alt={project.title}
-								height={200}
-								width={200}
-							/>
+						<div key={i} className={`mb-12 ${colSpan} ${rowSpan}`}>
+							<div className='relative w-full aspect-[4/3] rounded-xl overflow-hidden'>
+								<Image
+									src={project.image}
+									alt={project.title}
+									fill
+									className='object-cover'
+									priority
+								/>
+							</div>
 							<h1 className='text-[26px] my-4 font-medium leading-[1.1em] tracking-[-.07em]'>
 								{project.title}
 							</h1>

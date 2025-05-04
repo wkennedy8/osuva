@@ -5,11 +5,11 @@ export const Footer = () => {
 	return (
 		<footer className={`${onest.className} pt-12 bg-black`}>
 			<div className='text-center py-12'>
-				<h1 className='px-12 text-[44px] text-white font-normal leading-[1em] tracking-[-.07em]'>
+				<h1 className='px-12 text-[44px] lg:text-[60px] text-white font-normal leading-[1em] tracking-[-.07em]'>
 					Let's build something great together
 				</h1>
-				<div className='mt-8'>
-					<p className='px-4 text-lg font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
+				<div className='mt-8 lg:w-1/4 lg:mx-auto lg:text-center'>
+					<p className='px-4 text-lg lg:text-2xl font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
 						Get in touch to explore how we can help your business reach its full
 						potential.
 					</p>
@@ -23,14 +23,16 @@ export const Footer = () => {
 					Get Started Today
 				</Link>
 			</div>
-			<div className={'h-[2px] max-w-[1800px] bg-[#97979733] my-8 '} />
-			<div className='mt-12'>
-				<p className='px-8 text-md text-center font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
-					You can also email us at:
-				</p>
-				<h1 className='text-[32px] text-center text-white font-normal leading-[1em] tracking-[-.07em]'>
-					contact@osuva.agency
-				</h1>
+			<div className='h-[2px] max-w-[1800px] bg-[#97979733] my-8 ' />
+			<div>
+				<div className='mt-12'>
+					<p className='px-8 text-md text-center font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
+						You can also email us at:
+					</p>
+					<h1 className='text-[32px] text-center text-white font-normal leading-[1em] tracking-[-.07em]'>
+						contact@osuva.agency
+					</h1>
+				</div>
 			</div>
 			<div className='mt-16 px-4'>
 				<h1
