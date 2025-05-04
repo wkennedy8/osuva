@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 
-export const AnimatedHeroImage = () => {
+export const AnimatedHeroImage = ({ animate }) => {
 	const targetRef = useRef(null);
 
 	const { scrollYProgress } = useScroll({
@@ -15,7 +15,7 @@ export const AnimatedHeroImage = () => {
 			ref={targetRef}
 			src='/images/hero1.jpg'
 			transition={{ duration: 3, type: 'tween' }}
-			style={{ scale }}
+			style={animate && { scale }}
 			// priority
 			height={800}
 			width={800}

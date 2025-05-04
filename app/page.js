@@ -17,7 +17,7 @@ export default function Home() {
 				<Hero />
 			</div>
 			<div className='mt-24 w-full'>
-				<AnimatedHeroImage />
+				<AnimatedHeroImage animate />
 			</div>
 			<div className='px-4 lg:px-12'>
 				<OurVision />
@@ -31,7 +31,7 @@ export default function Home() {
 				<StartNowCTA />
 			</div>
 			<div className='mt-24'>
-				<AnimatedHeroImage />
+				<AnimatedHeroImage animate={false} />
 			</div>
 			<div className='px-4 lg:px-12 bg-gray-50'>
 				<Testimonials />
