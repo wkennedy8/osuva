@@ -10,60 +10,99 @@ export const ContactForm = () => {
 		message: ''
 	});
 
+	const [errors, setErrors] = useState({});
+
 	const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value });
+		setErrors({ ...errors, [e.target.name]: '' }); // clear error on input
 	};
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		console.log('Form submitted:', form);
-		// Add your logic here (e.g., API call or email service)
+	const validateForm = () => {
+		const newErrors = {};
+		if (!form.name.trim()) newErrors.name = 'Name is required.';
+		if (!form.email.trim()) {
+			newErrors.email = 'Email is required.';
+		} else if (!/\S+@\S+\.\S+/.test(form.email)) {
+			newErrors.email = 'Email is invalid.';
+		}
+		if (!form.message.trim()) newErrors.message = 'Message is required.';
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
 	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (validateForm()) {
+			try {
+				const response = await fetch('/api/contact', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(form)
+				});
+
+				console.log(response);
+			} catch (error) {
+				console.log('Error submitting form', error);
+			}
+		}
+	};
+
 	return (
-		<form
-			onSubmit={handleSubmit}
-			className='max-w-xl w-full space-y-8 text-black'
-		>
+		<form onSubmit={handleSubmit} className='max-w-xl w-full space-y-8'>
 			<div className='flex flex-col'>
 				<input
 					type='text'
 					name='name'
 					placeholder='Name *'
-					required
 					value={form.name}
 					onChange={handleChange}
-					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
+					className={`border-b pb-1 bg-transparent dark:placeholder-white focus:outline-none focus:border-[#0048f9] ${
+						errors.name ? 'border-red-500' : 'border-gray-400'
+					}`}
 				/>
+				{errors.name && (
+					<p className='text-red-500 text-sm mt-1'>{errors.name}</p>
+				)}
 			</div>
 
 			<div className='flex flex-col'>
 				<input
 					type='email'
 					name='email'
-					required
 					placeholder='E-mail *'
 					value={form.email}
 					onChange={handleChange}
-					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent pb-1'
+					className={`border-b pb-1 bg-transparent dark:placeholder-white focus:outline-none focus:border-[#0048f9] ${
+						errors.email ? 'border-red-500' : 'border-gray-400'
+					}`}
 				/>
+				{errors.email && (
+					<p className='text-red-500 text-sm mt-1'>{errors.email}</p>
+				)}
 			</div>
 
 			<div className='flex flex-col'>
 				<textarea
 					name='message'
 					placeholder='Project Information *'
-					required
 					rows={4}
 					value={form.message}
 					onChange={handleChange}
-					className='border-b dark:placeholder-white border-gray-400 focus:outline-none focus:border-[#0048f9] bg-transparent resize-none'
+					className={`border-b resize-none bg-transparent dark:placeholder-white focus:outline-none focus:border-[#0048f9] ${
+						errors.message ? 'border-red-500' : 'border-gray-400'
+					}`}
 				/>
+				{errors.message && (
+					<p className='text-red-500 text-sm mt-1'>{errors.message}</p>
+				)}
 			</div>
 
 			<div className='mb-12'>
 				<button
 					type='submit'
-					className='font-medium dark:text-white underline underline-offset-8 flex items-center gap-2'
+					className='group font-medium dark:text-white underline underline-offset-8 flex items-center gap-2'
 				>
 					Send message
 					<FiArrowUpRight className='text-[#0048f9] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200' />

@@ -529,6 +529,11 @@ next@15.3.1:
     "@next/swc-win32-x64-msvc" "15.3.1"
     sharp "^0.34.1"
 
+nodemailer@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-7.0.0.tgz#3dda775f202d279e1abaa9422428ff3ff35a8830"
+  integrity sha512-9QyEp969UmUWVDB2gVQvxHm1bqkyuC5YZIyX/ySJUpIVyXpuEFyBAuoFFs+G5/C2ZaUp9F5A65DPfxedfVHXXQ==
+
 picocolors@^1.0.0, picocolors@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
