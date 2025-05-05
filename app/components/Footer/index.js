@@ -34,31 +34,33 @@ export const Footer = () => {
 					</h1>
 				</div>
 			</div>
-			<div className='mt-16 px-4'>
-				<h1
-					className={`${league_spartan.className} leading-0 text-white text-5xl font-bold tracking-[-0.08em]`}
-				>
-					osuva
-				</h1>
-				<div className='mt-12 w-11/12'>
+			<div className='mt-16 px-4 lg:flex lg;px-12 lg:items-center lg:gap-2  lg:justify-between'>
+				<div className='lg:w-1/2'>
+					<h1
+						className={`${league_spartan.className} leading-0 text-white text-5xl font-bold tracking-[-0.08em]`}
+					>
+						osuva
+					</h1>
+				</div>
+				<div className='mt-12 lg:mt-0 w-11/12 lg:w-1/3'>
 					<p className='text-md font-medium text-[#8E8E93] tracking-[-.04em] leading-[1.4em]'>
 						We help businesses succeed in the digital space by creating
 						thoughtful solutions that combine smart design, reliable technology,
 						and a deep understanding of what your users really need.
 					</p>
 				</div>
-				<div className='mt-12 flex justify-between'>
-					<ul className='flex flex-col gap-2 w-1/2'>
-						<li className='text-white text-sm'>Home</li>
-						<li className='text-white text-sm'>Projects</li>
-						<li className='text-white text-sm'>About Us</li>
-						<li className='text-white text-sm'>Contact</li>
-					</ul>
-					<ul className='flex flex-col gap-2 w-1/2'>
-						<li className='text-white text-sm'>Instagram</li>
-						<li className='text-white text-sm'>Github</li>
-					</ul>
-				</div>
+			</div>
+			<div className='mt-12 flex justify-between px-4'>
+				<ul className='flex flex-col gap-2 w-1/2 lg:flex-row '>
+					<li className='text-white text-sm'>Home</li>
+					<li className='text-white text-sm'>Projects</li>
+					<li className='text-white text-sm'>About Us</li>
+					<li className='text-white text-sm'>Contact</li>
+				</ul>
+				<ul className='flex flex-col lg:flex-row  gap-2 lg:w-1/2 lg:justify-end '>
+					<li className='text-white text-sm'>Instagram</li>
+					<li className='text-white text-sm'>Github</li>
+				</ul>
 			</div>
 			<div className='mt-12'>
 				<p className='text-[#8E8E93] text-xs text-center'>

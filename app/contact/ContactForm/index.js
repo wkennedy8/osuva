@@ -43,6 +43,11 @@ export const ContactForm = () => {
 				});
 
 				console.log(response);
+				setForm({
+					name: '',
+					email: '',
+					message: ''
+				});
 			} catch (error) {
 				console.log('Error submitting form', error);
 			}
